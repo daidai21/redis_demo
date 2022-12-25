@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  redis:
+    image: redis:latest
+    restart: "no"
+    container_name: redis
+    ports:
+      - "5070:6379"
+    volumes:
+      - ./redis.redis:/etc/redis/redis.redis
+      - ./data:/data
+    command: redis-server /etc/redis/redis.redis
+    privileged: true
+
