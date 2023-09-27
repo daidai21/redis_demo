@@ -19,16 +19,18 @@ docker-compose ps  # 查看正在运行中的容器
 
 ## demos
 
-**string**
-
 * 缓存
 * 分布式锁
 * 计数器
 * 限流
 * 频控
 * 消息队列
-
-TODO:
+* 大Key切片缓存
+* 用户打标： list、 set
 
 ## ref
 
+* https://github.com/redis/redis
+* https://redis.io/
+* https://redis.com/
+* https://www.runoob.com/redis/redis-tutorial.html
